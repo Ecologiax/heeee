@@ -1,0 +1,141 @@
+@font-face {
+    font-family: MuseoSans;
+    font-weight: 300;
+    src: url("/MRE/fonts/login/MuseoSans_300.otf") format("opentype");
+}
+
+@font-face {
+	font-family: 'MiraiIcons';
+    src: url('/MRE/fonts/login/mirai-icons.eot');
+    src: url('/MRE/fonts/login/mirai-icons.eot#iefix') format('embedded-opentype'),
+        url('/MRE/fonts/login/mirai-icons.woff') format('woff'),
+        url('/MRE/fonts/login/mirai-icons.ttf') format('truetype'),
+        url('/MRE/fonts/login/mirai-icons.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    background-color: #f6f6f6;
+}
+            
+html, body, button, input, label, select, textarea {
+    font-family: "MuseoSans", arial;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: normal;
+    color: #666;
+}
+
+/* arrow-link */
+.arrow-link {
+    font-size: 14px;                    
+    color: #ee293a;
+    text-decoration: none;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.arrow-link:active,
+.arrow-link:hover {
+    color: #C71827;
+    text-decoration: none;    
+}
+.arrow-link .icon {
+    font-size: inherit;    
+    line-height: inherit;
+}
+.arrow-link .icon:before {
+    content: '\105';
+    vertical-align: bottom;
+    margin-left: 5px;               
+}
+           
+ul#languagesMenu {
+    padding: 0;
+    margin: 0 0 80px 0;
+}
+
+ul#languagesMenu li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 4px;
+    font-size: 13px;                
+}
+
+ul#languagesMenu li a {
+    color: #888;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+ul#languagesMenu li a:hover {
+    color: #C71827;
+}
+.login-wrapper {
+    width: 250px;
+    margin: 5% auto 0;
+    text-align: center;
+}
+.login-wrapper img.logo {
+    margin-bottom: 25px;
+    display: inline-block;
+    width: 140px;
+}
+#error-msg {
+    display: none;
+    font-size: 14px;
+    line-height: 18px;    
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    text-align: left;
+    background-color: #fcf8e3;
+    border: 1px solid #faf2cc;
+    color: #8a6d3b;
+}
+#contactFormSection .form-group {
+    margin-bottom: 25px;
+}
+#contactFormSection .form-control {    
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #cacaca;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 10px 0px;
+    width: 100%;
+    -webkit-box-shadow: 0 0 0px 1000px #f6f6f6 inset;
+}
+#contactFormSection .form-control:focus {    
+    color: #666;
+    border: 0;
+    border-bottom: 1px solid #666;
+    box-shadow: none;
+    outline: 0;                
+}
+
+/* pill-button */
+input.pill-button {
+    border: 1px solid #ee293a;
+    border-radius: 100px;
+    padding: 15px 40px;
+    background-color: #ee293a;
+    color: #fff !important;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 15px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+input.pill-button:hover,
+input.pill-button:active {
+    border-color: #C71827;
+    background-color: #C71827;
+    cursor: pointer;
+}
