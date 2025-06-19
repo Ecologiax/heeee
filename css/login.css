@@ -1,0 +1,411 @@
+@import url("jquery.ui.theme.css");
+@import url("variables.fonts.css");
+
+/**************************************************************
+GLOBAL RESET
+**************************************************************/
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+ul.bulleted-list-disc li {
+    list-style-type: disc !important;
+    line-height: 1rem;
+    list-style-position: outside;
+    display: list-item;
+    margin: 0;
+}
+
+ul.bulleted-list-circle li {
+    list-style-type: circle !important;
+    line-height: 1rem;
+    list-style-position: outside;
+    display: list-item;
+    margin: 0;
+}
+
+ul.bulleted-list-square li {
+    list-style-type: square !important;
+    line-height: 1rem;
+    list-style-position: outside;
+    display: list-item;
+    margin: 0;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*, html {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+    *, *:before, *:after {
+        box-sizing: inherit;
+        -webkit-box-sizing: inherit;
+        -moz-box-sizing: inherit;
+    }
+
+.control-row {
+    padding-bottom: 0.75rem; /* Vertical padding between rows */
+}
+
+.control-label {
+    padding-right: 1.5rem; /* Horizontal padding between labels and fields */
+}
+
+.button-row {
+    padding-top: 1.5rem; /* Vertical padding above the buttons */
+}
+
+/* Login CSS */
+
+.login-background {
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+}
+
+    .login-background::before {
+        background-color: #d80000;
+        bottom: 0;
+        content: '';
+        display: block;
+        height: 5000px;
+        left: 10%;
+        position: fixed;
+        top: 100%;
+        -webkit-transform: rotate(-24deg);
+        transform: rotate(-24deg);
+        -webkit-transform-origin: top left;
+        transform-origin: top left;
+        width: 15000px;
+        z-index: -1;
+    }
+
+    .login-background::after {
+        background: -webkit-radial-gradient(center ellipse,transparent 30%,rgba(0,0,0,.3) 100%);
+        background: radial-gradient(ellipse at center,transparent 30%,rgba(0,0,0,.3) 100%);
+        content: '';
+        display: block;
+        left: 0;
+        height: 100%;
+        top: 0;
+        position: fixed;
+        width: 100%;
+        z-index: -1;
+    }
+
+body.login {
+    background-color: #e50000 !important;
+}
+
+.login-container {
+    background: #fff;
+    padding: 3rem;
+    max-width: 900px;
+    border-radius: 3px;
+    margin: 40px auto;
+    margin-top: 100px;
+}
+
+.login-logo img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+/* Typography */
+.login p {
+    margin: 10px 0 15px 0;
+}
+
+.login h1 {
+    margin-bottom: 15px;
+}
+
+.login h3 {
+    line-height: 1;
+}
+
+/* Form */
+.login-form {
+    margin-top: 30px;
+}
+
+/* Lang */
+.login-lang ul {
+    border-top: 1px solid #e4e4e4;
+    padding-top: 20px;
+    margin-top: 40px;
+    list-style: none;
+}
+
+.login-lang li {
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+    .login-lang li a {
+        color: #20789f;
+        text-decoration: none;
+    }
+
+        .login-lang li a:hover {
+            color:;
+            text-decoration: underline;
+        }
+
+/* Terms */
+.login-terms {
+    background: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0px;
+}
+
+    .login-terms p {
+        color: #fff;
+    }
+/**************************************************************
+INPUTS
+**************************************************************/
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #e4e4e4;
+    width: 89%;
+    outline: none;
+    padding: 5px 15px;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    position: relative;
+    color: #555;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    min-height: 50px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #23826f;
+    box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    -moz-box-shadow: 0 0 5px #ccc;
+}
+
+input[type="submit"] {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    color: #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    min-height: 40px;
+    padding: 14px 30px;
+    background: #23826f;
+    text-align: center;
+    outline: 0;
+    border-radius: 5px !important;
+    border: 1px solid #165e51;
+    border-bottom: 3px solid #165e51;
+    transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+}
+
+    input[type="submit"]:hover {
+        background: #165e51;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+.login-forgotpass a {
+    color: #20789f;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+/**************************************************************
+MOBILE
+**************************************************************/
+@media screen and (max-width: 640px) {
+    .login h1,
+    .login h3 {
+        text-align: center;
+    }
+
+    .login-container {
+        padding: 1.5rem;
+        border-radius: 0;
+        margin: 0;
+        margin-top: 4px;
+    }
+}
+
+
+.login-name h1 {
+    display: none;
+}
+
+.login .buttonsContainer {
+    float: right;
+    padding: 15px 15px 15px 0px;
+}
+
+.login-container:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+}
+
+
+.width100 {
+    width: 100%;
+}
+
+.bottomPadding10, .bottomPadding10 td {
+    padding-bottom: 10px;
+}
+
+#RedirectMessageContainer span {
+    color: #DC2A2A;
+}
+
+.fieldLabel_150 {
+    width: 150px;
+}
+
+    .fieldLabel_150 label {
+        display: inline;
+    }
+
+.marginBottom5 {
+    margin-bottom: 5px;
+}
+
+.marginTop10 {
+    margin-top: 10px;
+}
+
+#LoginCntrl_ViewCookiePolicyHpl {
+    color: mediumblue;
+}
+
+/**************************************************************
+GLOBAL RESET
+**************************************************************/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body.login{
+	font-family: 'Roboto', helvetica, arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.2em;
+}
+.login-logo img{
+	width: 100%;
+	max-width: 160px;
+	height: auto !important;
+}
+.login h1{
+	font-size: 34px;
+	font-family: 'Roboto Slab', helvetica, arial, sans-serif;
+	line-height: 1;
+	text-align: center;
+}
+.login h3{
+	font-size: 18px;
+}
+
+/* Lang */
+.login-lang li{
+    font-size: 14px;
+}
+
+/* Terms */
+.login-terms p{
+	font-size: 12px;
+}
+/**************************************************************
+INPUTS
+**************************************************************/
+input[type="text"],
+input[type="password"]{
+	font-size: 16px;
+    font-family: 'Roboto Light', helvetica, arial, sans-serif;
+}
+
+input[type="submit"]{
+	font-size: 16px;
+	font-weight: bold;
+}
+input[type="submit"]:hover{
+	background:#165e51;
+	text-decoration:none;
+	color:#ffffff;
+
+}
+.login-forgotpass a{
+	font-size: 14px;
+}
+
+/**************************************************************
+MOBILE
+**************************************************************/
+@media screen and (max-width: 640px){
+	.login h1{
+		font-size:28px;
+	}
+}
+
+.login-name h1 {
+    display: block;
+}
+
+#RedirectMessageContainer span {
+    color: #DC2A2A;
+}

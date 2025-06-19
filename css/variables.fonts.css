@@ -1,0 +1,185 @@
+﻿/* #region Variables
+***** IMPORTANT NOTES *****
+1. If a new variable is added, it will need to be included in all existing theme's variables css files and the value will need to be updated based on each theme's look & feel
+2. There are different sets of variables, do not mix variables from different sets as it could result in accesibility/contrast and styling issues in this theme or the white label themes.
+3. There is a duplicate of this file in the Hes application, Themes/HMSPMS folder, any variable updates should be replicated in both files
+================================================== */
+:root {
+    /* Set 1: General content */
+    --fontFamilyHeadings: 'Roboto', sans-serif;
+    --fontSizeHeading: 1.25rem;
+    --fontSizeHeadingLarge: 1.5625rem;
+    --fontSizeHeadingXLarge: 1.9375rem;
+    --lineHeightHeading: 1.2;
+    --textColorHeading: #4A5767;
+    --fontFamily: 'Roboto', sans-serif;
+    --lineHeight: 1.5;
+    --fontSize: 16px;
+    --fontSizeSmall: .85rem;
+    --fontSizeLarge: 1.25rem;
+    --fontWeightNormal: 400;
+    --fontWeightLight: 300;
+    --fontWeightBold: 700;
+    --iconColor: #4A5767;
+    --textColor: #333;
+    --textColorLight: #555;
+    --textColorLighter: #616161;
+    --textColorDarkBg: #FFF;
+    --textColorLink: #0066A2;
+    --textColorLinkHover: #005688;
+    --textColorLinkActive: #1a4d66;
+    --textColorAction: #0F6E5B;
+    --textColorError: #AC0000;
+    --textColorWarning: #944F17;
+    --textColorSuccess: #496A0F;
+    --textColorInfo: #4A5767;
+    --textColorBlue: #2D6997;
+    --textColorViolet: #4139B4;
+    --backgroundWhite: #FFF;
+    --backgroundLightGray: #EEE;
+    --backgroundMediumGray: #E4E4E4;
+    --backgroundDarkGray: #DDD;
+    --backgroundHighlight: #e2eaf3;
+    --backgroundHighlightError: #FFDADA;
+    --backgroundDark1: #555;
+    --backgroundDark2: #222;
+    --borderLightGray: #CCC;
+    --borderMediumGray: #A1A1A1;
+    --borderDarkGray: #767676;
+    --borderDark: #555;
+    --borderRadius: 4px;
+    /* end Set 1 */
+    /* Set 2: Buttons */
+    --buttonFontFamily: 'Roboto', sans-serif;
+    --buttonLineHeight: 1;
+    --buttonFontSize: 16px;
+    --buttonFontWeight: 700;
+    --buttonTextColor: #FFF;
+    --buttonBackground: #23826F;
+    --buttonBorder: 1px solid #165e51;
+    --buttonTextColorHover: #FFF;
+    --buttonBackgroundHover: #165e51;
+    --buttonBorderHoverColor: #165e51;
+    --buttonTextColorActive: #FFF;
+    --buttonBackgroundActive: #195e51;
+    --buttonBorderActiveColor: #165e51;
+    --buttonBorderBottomWidth: 3px;
+    --buttonBorderRadius: 5px;
+    --buttonFocusShadowColor: #54877D;
+    --buttonSecondaryBackground: #FFF;
+    --buttonSecondaryColor: #207866;
+    --buttonSecondaryBorder: 1px solid #23826F;
+    /* End Set 2 */
+    /* Set 3: Form fields */
+    --inputFontFamily: 'Roboto', sans-serif;
+    --inputFontSize: 1rem;
+    --inputFontWeight: 400;
+    --inputTexColor: #333;
+    --inputBackground: #FFF;
+    --inputBorder: 1px solid #818181;
+    --inputTexColorFocus: #333;
+    --inputBackgroundFocus: #eee;
+    --inputBorderFocus: 2px solid #666;
+    --inputBorderRadius: 4px;
+    /* end Set 3*/
+    /* Set 4: Messages */
+    --backgroundError: #AC0000;
+    --backgroundErrorText: #FFF;
+    --backgroundWarning: #F9B646;
+    --backgroundWarningText: #663812;
+    --backgroundSucess: #5E8120;
+    --backgroundSucessText: #FFF;
+    --backgroundInfo: #4A5767;
+    --backgroundInfoText: #FFF;
+    /* end Set 4 */
+    /* Set 5: Data Visualization */
+    --dataGreenBackground: #75A01F;
+    --dataGreenText: #2A2A2A;
+    --dataRedBackground: #AC0000;
+    --dataRedText: #fff;
+    --dataBlueBackground: #79CAF2;
+    --dataBlueText: #333;
+    --dataVioletBackground: #804F92;
+    --dataVioletText: #fff;
+    --dataOrangeBackground: #E67E29;
+    --dataOrangeText: #2E2E2E;
+    --dataYellowBackground: #FFCE11;
+    --dataYellowText: #333;
+    --dataDarkGrayBackground: #767676;
+    --dataDarkGrayText: #020202;
+    --dataLightGrayBackground: #E4E4E4;
+    --dataLightGrayText: #020202;
+    --dataGrayGreenBackground: #8DAB95;
+    --dataGrayGreenText: #363636;
+    /* end Set 5 */
+    /* Set 6: Page Header */
+    --headerBackground: #EEE;
+    --headerColor: #222;
+    --headerLogoWidth: 111px;
+    --headerLogoWidthNextGen: 111px;
+    --headerLogoHeight: 45px;
+    --headerLogoImage: url(../images/logo.png);
+    --headerUserAvatarColor: #4A5767;
+    --menuTopBackground: #222;
+    --menuTopBorderTop: 4px solid #AC0000;
+    --menuTopText: #CCC;
+    --menuTopfontSize: 16px;
+    --menuTopSelectedBackground: #333;
+    --menuTopSelectedColor: #FFF;
+    --menuTopSelectTopBorder: 4px solid #AC0000;
+    --menuTopSelectedTopMargin: -4px;
+    --menuTopActiveBackground: #333;
+    --menuTopActiveColor: #FFF;
+    --menuTopActiveTopBorder: 4px solid #AC0000;
+    --menuTopActiveTopMargin: -4px;
+    --menu2ndLvlBackground: #333;
+    --menu2ndLvlColor: #CCC;
+    --menu2ndLvlFontSize: .75rem;
+    --menu2ndLvlBackgroundFocusHover: #7F7F7F;
+    --menu2ndLvlColorFocusHover: #151515;
+    --menu2ndLvlBackgroundActive: #fffffe;
+    --menu2ndLvlColorActive: #333;
+    --menu3rdLvlBackground: #fffffe;
+    --menu3rdLvlColor: #333;
+    --menu3rdLvlSepLine: #e4e4e4;
+    --menu3rdLvlfontSize: .875rem;
+    --menu3rdLvlBackgroundFocusHover: #929292;
+    --menu3rdLvlColorFocusHover: #2B2B2B;
+    --menu4rtLvlBackground: #e4e4e4;
+    --menu4rtLvlColor: #333;
+    --menu4rtLvlFontSize: .85rem;
+    --menu4rtLvlBackgroundFocusHover: #808080;
+    --menu4rtLvlColorFocusHover: #161616;
+    /* end Set 6 */
+    /* Set 7: Login */
+    --loginBodyBackground: #e50000;
+    --loginBackground: #d80000;
+    --loginBakcgroundGradient: radial-gradient(ellipse at center,transparent 30%,rgba(0,0,0,.3) 100%);
+    --loginBackgroundText: #FFF;
+    --loginLogoWidth: 160px;
+    /* end Set 7 */
+}
+/* #endregion */
+/* #region Typography
+================================================== */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto Bold'), local('Roboto-Bold'), url('../fonts/Roboto_700.eot#iefix') format('embedded-opentype'), url('../images/Roboto_700.svg#Roboto') format('svg'), url('../fonts/Roboto_700.ttf') format('truetype'), url('../fonts/Roboto_700.woff') format('woff'), url('../fonts/Roboto_700.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'), url('../fonts/Roboto_400.eot#iefix') format('embedded-opentype'), url('../images/Roboto_400.svg#Roboto') format('svg'), url('../fonts/Roboto_400.ttf') format('truetype'), url('../fonts/Roboto_400.woff') format('woff'), url('../fonts/Roboto_400.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'), url('../fonts/Roboto_300.eot#iefix') format('embedded-opentype'), url('../images/Roboto_300.svg#Roboto') format('svg'), url('../fonts/Roboto_300.ttf') format('truetype'), url('../fonts/Roboto_300.woff') format('woff'), url('../fonts/Roboto_300.woff2') format('woff2');
+}
+/* #endregion */
